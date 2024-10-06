@@ -1,0 +1,12 @@
+p {
+    color: rgb(27, 8, 174);
+}
+
+li {
+    color: rgb(189, 102, 16);
+}
+
+footer a {
+    display: flex;
+    align-items: flex-end;
+}
