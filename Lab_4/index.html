@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя перша HTML-форма</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <style>
+      form label, form input, form textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+    <h1>Моя перша HTML-форма</h1>
+
+    <form method="GET" action="https://httpbin.org/get">
+      <label for="user name">Ім'я:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="user birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="birthdate" />
+
+      <label for="email">Імейл:</label>
+      <input type="user email" id="email" name="email" />
+
+      <label for="message">Повідомлення:</label>
+      <textarea id="user message" name="message" rows="4"></textarea>
+      <div class="form-buttons">
+      <fieldset>
+        <legend>Ваші улюблені напої?</legend>
+        <label>
+          <input type="checkbox" name="drink" value="coffee"> Кава
+        </label>
+        <label>
+          <input type="checkbox" name="drink" value="Beer"> Пиво
+        </label>
+        <label>
+          <input type="checkbox" name="drink" value="Vine"> Вино
+        </label>
+        <label>
+          <input type="checkbox" name="drink" value="Vodka"> Самогонка
+        </label>
+      </fieldset>
+    
+      <!-- Група з радіокнопками -->
+      <fieldset>
+        <legend>Моя національність</legend>
+        <label>
+          <input type="radio" name="nationality" value="ukrainian"> Українець
+        </label>
+        <label>
+          <input type="radio" name="nationality" value="polish"> Поляк
+        </label>
+        <label>
+          <input type="radio" name="nationality" value="german"> Німець
+        </label>
+      </fieldset>
+    </div>
+    
+      <input type="submit" value="Надіслати" />
+      <input type="reset" value="Очистити" />
+    </form>
+
+    <!-- Додаємо картинку під форму -->
+    <picture>
+  <!-- Картинка для екранів з шириною до 468px -->
+  <source srcset="pictures/small-img.jpg" media="(max-width: 468px)">
+  <!-- Картинка для великих екранів -->
+  <source srcset="pictures/big-img.jpg" media="(min-width: 469px)">
+  <!-- Резервна картинка, якщо ні одна з уомв не виконана -->
+  <img src="pictures/big-img.jpg" alt="Коваль">
+    </picture>
+
+  </body>
+</html>

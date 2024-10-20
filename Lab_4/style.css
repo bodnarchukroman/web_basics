@@ -1,0 +1,37 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-bottom: 5px; 
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+input[type="submit"],
+input[type="reset"] {
+  width: 100px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+/* Вирівнювання чекбоксів і радіокнопок з текстом */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  /* Відступ між радіокнопками і кнопками "Надіслати" та "Очистити" */
+  fieldset {
+    margin-bottom: 20px;
+  }
+
